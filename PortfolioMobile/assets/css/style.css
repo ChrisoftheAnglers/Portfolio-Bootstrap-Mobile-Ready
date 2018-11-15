@@ -186,7 +186,7 @@ img {
     }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 420px) { /*changed from 412 to 420 to increase leniency for larger phone screens*/
     #headername {
         width: 63%;
         text-align: center;
