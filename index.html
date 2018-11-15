@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Choose Bootstrap or Mobile Original Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 72pt;
+            text-decoration: none;
+            display: inline-block;
+            box-sizing: border-box;
+            width: 45%;
+            height: auto;
+            background-color: goldenrod;
+            color: darkred;
+            text-align: center;
+        }
+        a:hover {
+            font-weight: bolder;
+            color: black;
+        }
+        a:active {
+            font-weight: 900;
+            color: white;
+        }
+        a#right {
+            position: fixed;
+            right: 0;
+        }
+        a#left {
+            position: fixed;
+            left:0;
+        }
+        h1 {
+            font-size: 100pt;
+            text-align: center;
+            font-family:'Courier New', Courier, monospace;
+            width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size:50pt;
+            }
+            a {
+                font-size:38pt;
+            }
+        }
+        @media screen and (max-width: 414px) {
+            body {
+                background-color:black;
+            }
+            h1 {
+                color:gold;
+                font-size:36pt;
+                margin-top: 10px;
+            }
+            a {
+                font-size:24pt;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose your site (version)!</h1>
+    <a href="PortfolioBootstrap/index.html" id="left">Bootstrap Modified Portfolio</a>
+    <a href="PortfolioMobile/index.html" id="right">Original Portfolio Mobile Ready</a>
+</body>
+</html>
